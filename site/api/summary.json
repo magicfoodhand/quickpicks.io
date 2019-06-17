@@ -1,0 +1,12 @@
+{
+  "lotteries": [
+    "us/powerball",
+    "us/mega_millions",
+    "us/states/california/daily_3",
+    "us/states/california/daily_4",
+    "us/states/california/fantasy_5",
+    "us/states/california/super_lotto",
+    "us/states/idaho/weekly_grand",
+    "us/states/idaho/lucky_for_life",
+  ]
+}
