@@ -24,10 +24,10 @@ response = http.request(request)
 lines = response.read_body.split("\r\n").drop(5).map do |line| 
     row = line.split(/\s\s+/)
     {
-        draw_number: row.first,
+        draw_number: row.first.to_i,
         draw_date: Date.parse(row[1]),
-        balls: row.slice(2, 6),
-        megaball: row.last
+        balls: row.slice(2, 6).map(&:to_i),
+        megaball: row.last.to_i
     }
 end
 

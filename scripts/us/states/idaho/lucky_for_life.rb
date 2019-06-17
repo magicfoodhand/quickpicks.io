@@ -29,8 +29,8 @@ lines = page.css('tr').drop(1).map do |line|
     row = line.text.split(/\s+/).drop(1)
     {
         draw_date: row[0],
-        balls: row.slice(1..5),
-        lb: row[8]
+        balls: row.slice(1..5).map(&:to_i),
+        lb: row[8].to_i
     }
 end
 

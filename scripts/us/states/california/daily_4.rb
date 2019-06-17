@@ -24,9 +24,9 @@ response = http.request(request)
 lines = response.read_body.split("\r\n").drop(5).map do |line| 
     row = line.split(/\s\s+/)
     {
-        draw_number: row.first,
+        draw_number: row.first.to_i,
         draw_date: Date.parse(row[1]),
-        balls: row.slice(2..-1)
+        balls: row.slice(2..-1).map(&:to_i)
     }
 end
 
