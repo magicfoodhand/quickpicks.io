@@ -1,0 +1,26 @@
+# United States
+# Mega Millions
+15  20  *  *  2,5    /usr/local/bin/qp/scripts/us/mega_millions
+# Powerball
+15  20  *  *  3,6   /usr/local/bin/qp/scripts/us/powerball
+
+# California
+# Daily 3 
+0  13  *  *  *    /usr/local/bin/qp/scripts/us/california/daily_3
+45  18  *  *  *    /usr/local/bin/qp/scripts/us/california/daily_3
+# Daily 4
+45  18  *  *  *    /usr/local/bin/qp/scripts/us/california/daily_4
+# Fantasy 5
+45  18  *  *  *    /usr/local/bin/qp/scripts/us/california/fantasy_5
+# Super Lotto
+15  20  *  *  3,6    /usr/local/bin/qp/scripts/us/california/super_lotto
+
+#Idaho
+# Idaho Cash
+15  19  *  *  3,6   /usr/local/bin/qp/scripts/us/idaho/idaho_cash
+# Lotto America
+15  20  *  *  3,6   /usr/local/bin/qp/scripts/us/idaho/lotto_america
+# Lucky for Life
+50  19  *  *  1,4    /usr/local/bin/qp/scripts/us/idaho/lucky_for_life
+# Weekly Grand
+15  19  *  *  3,6    /usr/local/bin/qp/scripts/us/idaho/weekly_grand

@@ -1,3 +1,3 @@
-#!/bin/bash
+#!/bin/sh
 
 ruby mega_millions.rb ../../site/api/us/mega_millions/

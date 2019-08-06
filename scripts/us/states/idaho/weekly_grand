@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 ruby weekly_grand.rb ../../../../site/api/us/states/idaho/weekly_grand/
 
