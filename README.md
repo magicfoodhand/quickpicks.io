@@ -9,5 +9,5 @@ docker build -t quick-picks .
 
 ## Run
 ```sh
-ocker run -v site:/usr/local/bin/qp/site quick-picks
+docker run -v site:/usr/local/bin/qp/site quick-picks
 ```
