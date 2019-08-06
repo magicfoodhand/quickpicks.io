@@ -1,10 +1,15 @@
-FROM ruby:2.7-rc-alpine
-
-RUN mkdir -p /usr/local/bin/qp/scripts
+FROM ruby:2.6.3-alpine3.10
 
 # cron jobs in PST
-RUN apk update --no-cache && apk add --no-cache dcron tzdata
 ENV TZ America/Los_Angeles
+
+COPY Gemfile Gemfile.lock /
+
+RUN apk add --update --no-cache build-base dcron tzdata
+
+RUN bundle config build.nokogiri && bundle install
+
+RUN mkdir -p /usr/local/bin/qp/scripts
 
 COPY ./scripts/* /usr/local/bin/qp/scripts/
 

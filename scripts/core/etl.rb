@@ -17,7 +17,6 @@ def basic_request(base_directory, url, cookie, &create_lines)
   write_pages lines
   name = $0.split(/_|.rb/).join(' ').titleize
   write_summary lines, name 
-  `git add ../../site && git commit -m 'quick picks run for #{name} - #{DateTime.now}' && git push`
 end
 
 def check_usage(base_directory, filename)
