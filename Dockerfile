@@ -9,8 +9,6 @@ RUN apk add --update --no-cache build-base dcron tzdata
 
 RUN bundle config build.nokogiri && bundle install
 
-RUN mkdir -p /usr/local/bin/qp/scripts
-
 COPY ./scripts/* /usr/local/bin/qp/scripts/
 
 COPY ./crontab.txt /tmp/crontab.txt
